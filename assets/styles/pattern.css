@@ -93,3 +93,24 @@ h2 span {
     font-size: 1.2rem;
     font-weight: 300;
 }
+
+
+/* FORM PATTERN */
+
+input[type="text"],
+textarea {
+    background-color: var(--semi-black);
+    border: 1px solid var(--semi-black);
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 2rem;
+    resize: none;
+    color: var(--white-color);
+    outline: none;
+    transition: all 0.4s;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+    border: 1px solid var(--primary-color);
+}
