@@ -1,0 +1,87 @@
+/* COLORS */
+
+:root {
+    --primary-color: #dcf64b;
+    --second-color: #a0b435;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --black-color-medium: #0c0c0c;
+    --semi-black: #1e1e1e;
+}
+
+
+/* GRID NORMAL 12 COLUMNS */
+
+.container {
+    width: 100%;
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 0rem 1.5rem;
+}
+
+
+/* GRID FLUID 100% */
+
+.container-fluid {
+    width: 100%;
+    padding: 0px 18px;
+}
+
+
+/* TITLE PATTERNS */
+
+h2 {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+    color: var(--white-color);
+    margin-top: 2rem;
+}
+
+h2 span {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    border-radius: 24px;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 1rem 2.6rem;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--white-color);
+    transform: scale(1.04);
+}
+
+.btn-primary.empty {
+    border: 2px solid var(--primary-color);
+    border-radius: 24px;
+    color: var(--primary-color);
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.btn-primary.empty:hover {
+    color: var(--black-color);
+    background-color: var(--primary-color);
+}
+
+.menu-item {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    transition: all 0.2s;
+}
+
+.menu-item:hover {
+    color: var(--white-color);
+    transform: scale(1.04);
+}
