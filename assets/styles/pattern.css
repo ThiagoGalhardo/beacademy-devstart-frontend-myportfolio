@@ -1,8 +1,14 @@
 /* COLORS */
 
 :root {
-    --primary-color: #dcf64b;
+    /* --primary-color: #dcf64b;
     --second-color: #a0b435;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --black-color-medium: #0c0c0c;
+    --semi-black: #1e1e1e; */
+    --primary-color: #31b6eb;
+    --second-color: #2e5a6b;
     --white-color: #ffffff;
     --black-color: #000000;
     --black-color-medium: #0c0c0c;
