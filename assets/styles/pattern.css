@@ -85,3 +85,11 @@ h2 span {
     color: var(--white-color);
     transform: scale(1.04);
 }
+
+.tag {
+    border-radius: 5rem;
+    padding: 0.6rem 2.7rem;
+    background-color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
