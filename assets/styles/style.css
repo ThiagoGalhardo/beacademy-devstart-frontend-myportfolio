@@ -229,6 +229,7 @@ header .container nav .menu-social img:hover {
 
 .s-about .container .about-me ul {
     display: flex;
+    flex-direction: row;
     gap: 1.6rem;
     margin-top: 3.2rem;
 }
@@ -244,4 +245,41 @@ header .container nav .menu-social img:hover {
 
 .s-about .container .my-picture img {
     border-radius: 10px;
+}
+
+
+/* CASES */
+
+.s-cases {
+    padding: 4.5rem 0;
+    margin-bottom: 8rem;
+}
+
+.s-cases .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.s-cases .container .title-cases {
+    margin-bottom: 7.3rem;
+}
+
+.s-cases .container .cases {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-cases .container .cases img {
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    height: 30rem;
+}
+
+.s-cases .container .cases img:hover {
+    transform: scale(1.15);
 }
