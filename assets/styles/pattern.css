@@ -4,9 +4,11 @@
     --primary-color: #31b6eb;
     --second-color: #00BCD4;
     --white-color: #ffffff;
+    --gray-color: #ddd;
     --black-color: #000000;
     --black-color-medium: #0c0c0c;
     --semi-black: #1e1e1e;
+    --blue-dark: #1E1938;
 }
 
 
@@ -36,7 +38,7 @@ h2 {
     font-size: 6.4rem;
     line-height: 7.7rem;
     color: var(--white-color);
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 h2 span {
@@ -44,7 +46,7 @@ h2 span {
 }
 
 .btn-primary {
-    border-radius: 24px;
+    border-radius: 10px;
     font-weight: 700;
     line-height: 2.4rem;
     font-size: 1.6rem;
@@ -61,7 +63,7 @@ h2 span {
 
 .btn-primary.empty {
     border: 2px solid var(--primary-color);
-    border-radius: 24px;
+    border-radius: 10px;
     color: var(--primary-color);
     background-color: transparent;
     transition: all 0.3s;
@@ -94,23 +96,38 @@ h2 span {
     font-weight: 300;
 }
 
+.icon-social img{
+    transition: all 0.2s;
+    height: 3.5rem;
+    background-color:var(--blue-dark);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
 
 /* FORM PATTERN */
 
 input[type="text"],
+input[type="email"],
 textarea {
-    background-color: var(--semi-black);
-    border: 1px solid var(--semi-black);
+    background-color: var(--white-color);
+    border: 3px solid var(--white-color);
     border-radius: 0.4rem;
     width: 100%;
     padding: 2rem;
     resize: none;
-    color: var(--white-color);
+    color: var(--black-color);
     outline: none;
     transition: all 0.4s;
+    box-sizing: border-box;
 }
 
 input[type="text"]:hover,
-textarea:hover {
-    border: 1px solid var(--primary-color);
+input[type="email"]:hover,
+textarea:hover,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 3px solid var(--primary-color);
+    
 }

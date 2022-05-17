@@ -35,8 +35,8 @@ sr.reveal(`
 );
 
 sr.reveal(
-    `.cards,
-    `, { delay: 400, origin: 'right' }
+    '.cards, .hello-image img'
+    , { delay: 400, origin: 'right' }
 );
 
 sr.reveal('.input-group input, .input-group textarea', { delay: 600, origin: 'right', interval: 200, });

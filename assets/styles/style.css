@@ -20,6 +20,13 @@ header .container {
     align-items: center;
 }
 
+header .container .logo p{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--white-color);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 header .container nav {
     display: flex;
     flex-direction: row;
@@ -35,7 +42,7 @@ header .container nav .menu {
 }
 
 header .container nav .menu li {
-    margin-right: 4.8rem;
+    margin-right: 4rem;
 }
 
 header .container nav .menu-social {
@@ -44,11 +51,7 @@ header .container nav .menu-social {
     justify-content: space-between;
     align-content: center;
     margin-left: 4rem;
-    gap: 3.4rem;
-}
-
-header .container nav .menu-social img {
-    transition: all 0.2s;
+    gap: 2em;
 }
 
 header .container nav .menu-social img:hover {
@@ -56,31 +59,23 @@ header .container nav .menu-social img:hover {
     transform: translateY(-10%);
 }
 
-/* section{
-    min-height: 100vh;
-} */
-
-
 /* SECTION HERO */
 
 .s-hero {
-    /* background: url(../img/s-hero-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; */
     min-height: 90vh;
 }
 
 .s-hero .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between
 }
 
 .s-hero .container .title {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     max-width: 60rem;
     margin-top: 24rem;
@@ -91,8 +86,8 @@ header .container nav .menu-social img:hover {
     font-family: "Inter";
     font-weight: 700;
     font-size: 6.4rem;
-    line-height: 7.7rem;
-    text-align: center;
+    line-height: 7.5rem;
+    text-align: left;
     color: var(--white-color);
 }
 
@@ -104,16 +99,16 @@ header .container nav .menu-social img:hover {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 3.2rem;
+    text-align: left;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
 }
 
 .s-hero .container .title p {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.7rem;
-    text-align: center;
+    text-align: left;
     color: var(--second-color)
 }
 
@@ -137,6 +132,12 @@ header .container nav .menu-social img:hover {
 .s-hero .container .title .btn-primary {
     margin-top: 4rem;
     padding: 1rem 5.6rem;
+}
+
+.s-hero .hello-image {
+    display: flex;
+    height: 60rem;
+    padding: 2rem 1rem;
 }
 
 
@@ -163,8 +164,7 @@ header .container nav .menu-social img:hover {
 }
 
 .s-success .container .cards .card {
-    width: 100%;
-    max-width: 27.9rem;
+    width: 27.9rem;
     height: 30.4rem;
     background-color: var(--white-color);
     border-radius: 4px;
@@ -233,7 +233,7 @@ header .container nav .menu-social img:hover {
 .s-about .container .about-me p {
     font-weight: 400;
     line-height: 2.4rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: rgba(255, 255, 255, 0.83);
     margin-top: 2.4rem;
 }
@@ -314,14 +314,13 @@ header .container nav .menu-social img:hover {
 
  .card-footer .btn-primary{
       border: none;
-      border-radius: 0.5rem;
       background-color: var(--second-color);
       color: var(--white-color);
       margin: 0.5rem;
   }
 
  .card-footer .btn-primary.empty{
-    border: 1px solid var(--black-color-medium);
+    border: 2px solid var(--black-color-medium);
     color: var(--black-color-medium);
     background-color: transparent;
 }
@@ -350,7 +349,8 @@ header .container nav .menu-social img:hover {
     max-width: 48.6rem;
 }
 
-.s-contact .container .form-contact .input-group input[type="text"] {
+.s-contact .container .form-contact .input-group input[type="text"],
+.s-contact .container .form-contact .input-group input[type="email"] {
     margin-bottom: 3.1rem;
 }
 
@@ -361,16 +361,16 @@ header .container nav .menu-social img:hover {
 .input-button {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .s-contact .container .form-contact button {
-    border-radius: 2.4rem;
     background-color: var(--primary-color);
-    padding: 1rem 2.4rem;
+    color: var(--white-color);
+    font-weight: 500;
+    padding: 1.2rem 5rem;
     border: none;
     margin-top: 1.7rem;
-    font-weight: 700;
 }
 
 

@@ -31,7 +31,11 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="./assets/img/logo.svg" alt="Logo Be Academy" />
+
+                <a href="index.html">
+                    <p>GALHARDO {...}</p>
+                </a>
+
             </div>
             <nav>
                 <ul class="menu">
@@ -41,11 +45,11 @@
                 <a href="#contact" class="btn-primary">
                     😉 <span>PEÇA UM ORÇAMENTO</span></a>
                 <ul class="menu-social">
-                    <li>
+                    <li class="icon-social">
                         <a href="https://www.linkedin.com/in/thgalhardo/" target="_blank"><img
                                 src="./assets/img/icon-linkedin.svg" alt="Ir para Página do Linkedin" /></a>
                     </li>
-                    <li>
+                    <li class="icon-social">
                         <a href="https://github.com/ThiagoGalhardo" target="_blank"><img
                                 src="./assets/img/icon-github.svg" alt="Ir para Página do GitHub" /></a>
                     </li>
@@ -58,27 +62,34 @@
     <main>
         <section class="s-hero">
             <div class="container">
-                <div class="title">
-                    <h1>Olá!👋🏻 Eu sou <br /><span>Thiago Galhardo</span></h1>
-                    <h2>Software Developer</h2>
-                    <p>
-                        Tenho como responsabilidade realizar sonhos, transformando seu projeto em uma obra de arte.
-                    </p>
+                <div class="hello">
+                    <div class="title">
+                        <h1>Olá, eu sou <br /><span>Thiago Galhardo</span></h1>
+                        <h2>Software Developer</h2>
+                        <p>
+                            Tenho como responsabilidade realizar sonhos, transformando seu projeto em uma obra de arte.
+                        </p>
 
-                    <div class="techs">
-                        <a href="">
-                            <img src="./assets/img/icon-html.svg" alt="Linguagem de marcação HTML" />
-                        </a>
-                        <a href="">
-                            <img src="./assets/img/icon-css.svg" alt="Folha de estilo CSS" />
-                        </a>
-                        <a href="">
-                            <img src="./assets/img/icon-javascript.svg" alt="Linguagem de programação Javascript" />
-                        </a>
+                        <div class="techs">
+                            <a href="">
+                                <img src="./assets/img/icon-html.svg" alt="Linguagem de marcação HTML" />
+                            </a>
+                            <a href="">
+                                <img src="./assets/img/icon-css.svg" alt="Folha de estilo CSS" />
+                            </a>
+                            <a href="">
+                                <img src="./assets/img/icon-javascript.svg" alt="Linguagem de programação Javascript" />
+                            </a>
+                        </div>
+
+                        <a href="#cases" class="btn-primary empty">Veja meus cases</a>
                     </div>
-
-                    <a href="#cases" class="btn-primary empty">Veja meus cases</a>
                 </div>
+
+                <div class="hello-image">
+                    <img src="./assets/img/undraw_laravel_and_vue.svg" alt="">
+                </div>
+
             </div>
         </section>
 
@@ -93,7 +104,7 @@
                 <div class="cards">
                     <div class="card active">
                         <div class="card-title">
-                            <h3>+30</h3>
+                            <h3>+5</h3>
                         </div>
                         <div class="card-info">
                             <p>
@@ -105,7 +116,7 @@
 
                     <div class="card">
                         <div class="card-title">
-                            <h3>+150</h3>
+                            <h3>+20</h3>
                         </div>
                         <div class="card-info">
                             <p>
@@ -143,12 +154,12 @@
                         Aqui irei postar meus projetos pessoais para que você possa apreciar do meu trabalho.
                     </p>
                     <ul>
-                        <li>
+                        <li class="icon-social">
                             <a href="https://www.linkedin.com/in/thgalhardo/"><img src="./assets/img/icon-linkedin.svg"
                                     alt="Meu Linkedin" /></a>
                         </li>
 
-                        <li>
+                        <li class="icon-social">
                             <a href="https://github.com/ThiagoGalhardo"><img src="./assets/img/icon-github.svg"
                                     alt="Meu GitHub" /></a>
                         </li>
@@ -263,11 +274,11 @@
 
                 <form class="form-contact" method="post" action="">
                     <div class="input-group">
-                        <input type="text" placeholder="Preencha seu nome" required />
+                        <input type="text" placeholder="Seu nome" required />
                     </div>
 
                     <div class="input-group">
-                        <input type="text" placeholder="Preencha seu nome" required />
+                        <input type="email" placeholder="E-mail" required />
                     </div>
 
                     <div class="input-group">
