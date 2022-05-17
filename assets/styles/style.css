@@ -1,3 +1,7 @@
+body{
+    background: linear-gradient(0deg, rgb(30, 25, 56) 30%, rgba(2,0,36,1) 100%);
+}
+
 /* HEADER */
 
 header {
@@ -60,9 +64,9 @@ header .container nav .menu-social img:hover {
 /* SECTION HERO */
 
 .s-hero {
-    background: url(../img/s-hero-bg.jpg);
+    /* background: url(../img/s-hero-bg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     min-height: 90vh;
 }
 
@@ -211,7 +215,7 @@ header .container nav .menu-social img:hover {
 /* ABOUT */
 
 .s-about {
-    background-color: var(--black-color-medium);
+    /* background-color: var(--black-color-medium); */
     padding: 6rem 0;
 }
 
@@ -270,12 +274,12 @@ header .container nav .menu-social img:hover {
     margin-bottom: 7.3rem;
 }
 
-.s-cases .container .swiper {
+.swiper {
     width: 100%;
     height: 50rem;
   }
 
-  .s-cases .container .swiper .swiper-slide {
+ .swiper-slide {
     display: flex;
     flex-direction: column;
     justify-content: start;  
@@ -290,25 +294,25 @@ header .container nav .menu-social img:hover {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }  
 
-  .s-cases .container .swiper .swiper-slide h3{
+ .swiper-slide h3{
       font-size: 2.4rem;
   }
 
-  .s-cases .container .swiper .swiper-slide p{
+ .swiper-slide p{
     font-size: 1.6rem;
     padding: 1rem 3rem;
     height: 30%;
     text-align: left;
 }
 
-  .s-cases .container .swiper .swiper-slide img {
+ .swiper-slide img {
     width: 100%;
     height: 45%;
     padding: 1.5rem;
     margin: 0;    
   }
 
-  .s-cases .container .swiper .swiper-slide .card-footer .btn-primary{
+ .card-footer .btn-primary{
       border: none;
       border-radius: 0.5rem;
       background-color: var(--second-color);
@@ -316,7 +320,7 @@ header .container nav .menu-social img:hover {
       margin: 0.5rem;
   }
 
-  .s-cases .container .swiper .swiper-slide .card-footer .btn-primary.empty{
+ .card-footer .btn-primary.empty{
     border: 1px solid var(--black-color-medium);
     color: var(--black-color-medium);
     background-color: transparent;
@@ -383,7 +387,7 @@ footer .container {
 }
 
 footer .container .copy {
-    padding: 5.2rem 0;
+    padding: 3rem 0;
 }
 
 footer .container .copy {
