@@ -14,10 +14,10 @@ ScrollReveal().reveal(
 .form-contact,
 .copy
 `, {
-        delay: 300,
-        origin: 'top'
+    delay: 300,
+    origin: 'top'
 
-    }
+}
 );
 
 ScrollReveal().reveal(
@@ -30,31 +30,26 @@ ScrollReveal().reveal(
   .title-cases,
   .cases,
   .title-contact`, {
-        delay: 400,
-        origin: 'left'
+    delay: 400,
+    origin: 'left'
 
-    }
+}
 );
 
 
-
-// const scrollReveal = ScrollReveal({
-//     origin: "top",
-//     distance: "5px",
-//     duration: 700,
-//     reset: true,
-// });
-
-// scrollReveal.reveal(
-//     `
-// .s-hero .title, 
-// .s-success .tag ,
-// .title-success,
-// .cards,
-// .card,
-// .s-about,
-// .about-me .my-picture,
-// .s-cases,
-// .title-cases,
-// .cases`, { interval: 50 }
-// );
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

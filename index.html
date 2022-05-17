@@ -10,7 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet" />
 
     <!-- ========= CSS ========= -->
 
@@ -18,6 +20,9 @@
     <link rel="stylesheet" href="./assets/styles/pattern.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/responsive.css" />
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <title>Thiago Galhardo | Portfolio</title>
 </head>
@@ -34,13 +39,15 @@
                     <li><a href="#cases" class="menu-item">CASES</a></li>
                 </ul>
                 <a href="#contact" class="btn-primary">
-                😉 <span>PEÇA UM ORÇAMENTO</span></a>
+                    😉 <span>PEÇA UM ORÇAMENTO</span></a>
                 <ul class="menu-social">
                     <li>
-                        <a href="https://www.linkedin.com/in/thgalhardo/" target="_blank"><img src="./assets/img/icon-linkedin.svg" alt="Ir para Página do Linkedin" /></a>
+                        <a href="https://www.linkedin.com/in/thgalhardo/" target="_blank"><img
+                                src="./assets/img/icon-linkedin.svg" alt="Ir para Página do Linkedin" /></a>
                     </li>
                     <li>
-                        <a href="https://github.com/ThiagoGalhardo" target="_blank"><img src="./assets/img/icon-github.svg" alt="Ir para Página do GitHub" /></a>
+                        <a href="https://github.com/ThiagoGalhardo" target="_blank"><img
+                                src="./assets/img/icon-github.svg" alt="Ir para Página do GitHub" /></a>
                     </li>
                 </ul>
             </nav>
@@ -70,7 +77,7 @@
                         </a>
                     </div>
 
-                    <a href="https://github.com/ThiagoGalhardo" class="btn-primary empty">Veja meus cases</a>
+                    <a href="#cases" class="btn-primary empty">Veja meus cases</a>
                 </div>
             </div>
         </section>
@@ -81,6 +88,8 @@
                     <span class="tag">#QualidadeImpecável 🥇</span>
                     <h2><span>Sucesso</span><br />Tem <br />Nome</h2>
                 </div>
+
+
                 <div class="cards">
                     <div class="card active">
                         <div class="card-title">
@@ -118,7 +127,10 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
         </section>
 
         <section id="about" class="s-about">
@@ -126,16 +138,21 @@
                 <div class="about-me">
                     <h2>QUEM SOU<span>.</span></h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At est temporibus accusamus vel alias deserunt, consequuntur rem ratione voluptate suscipit? Provident pariatur fuga ab earum impedit expedita sint, culpa explicabo. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Recusandae minima aliquam ducimus corrupti! Aut neque quia repellat, porro doloremque expedita accusamus quae minus reiciendis non soluta error animi et aspernatur.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At est temporibus accusamus vel alias
+                        deserunt, consequuntur rem ratione voluptate suscipit? Provident pariatur fuga ab earum impedit
+                        expedita sint, culpa explicabo. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Recusandae minima aliquam ducimus corrupti! Aut neque quia repellat, porro
+                        doloremque expedita accusamus quae minus reiciendis non soluta error animi et aspernatur.
                     </p>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/thgalhardo/"><img src="./assets/img/icon-linkedin.svg" alt="Meu Linkedin" /></a>
+                            <a href="https://www.linkedin.com/in/thgalhardo/"><img src="./assets/img/icon-linkedin.svg"
+                                    alt="Meu Linkedin" /></a>
                         </li>
 
                         <li>
-                            <a href="https://github.com/ThiagoGalhardo"><img src="./assets/img/icon-github.svg" alt="Meu GitHub" /></a>
+                            <a href="https://github.com/ThiagoGalhardo"><img src="./assets/img/icon-github.svg"
+                                    alt="Meu GitHub" /></a>
                         </li>
                     </ul>
                 </div>
@@ -150,17 +167,94 @@
                 <div class="title-cases">
                     <h2>CASES<span>.</span></h2>
                 </div>
-                <div class="cases">
-                    <div class="case">
-                        <img src="./assets/img/case1.jpg" alt="Case 1" />
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="./assets/img/netflix-clone.gif" alt="">
+                            <h3>Netflix Clone</h3>
+                            <p>Clone da página de filmes da Netflix.<br>
+                                Projeto desenvolvido em React JS, aplicado responsividade e utilizado API Tmdb.</p>
+
+                            <div class="card-footer">
+                                <button class="btn-primary empty">
+                                    <a href="https://github.com/ThiagoGalhardo/netflix-clone" target="_blank">Github</a>
+                                </button>
+
+                                <button class="btn-primary">
+                                    <a href="https://netflix-clone-galhardo.vercel.app/" target="_blank">Live Demo</a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/img/lofi.gif" alt="">
+                            <h3>LoFi Player</h3>
+                            <p>Um player de música estilo LoFi, controles de mídia personalizados,
+                                layout responsivo e com variedade de cores no tema.
+                                Desenvolvido com HTML, CSS e JavaScript.</p>
+
+                            <div class="card-footer">
+                                <button class="btn-primary empty">
+                                    <a href="https://github.com/ThiagoGalhardo/lofi-player" target="_blank">Github</a>
+                                </button>
+                                <button class="btn-primary">
+                                    <a href="https://lofi-player-galhardo.vercel.app/" target="_blank">Live Demo</a>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <img src="./assets/img/countdown.gif" alt="">
+                            <h3>CountDown</h3>
+                            <p>Projeto de um countdown feito com base em um desafio da Rocketseat e aprimorado com
+                                toggle para tema dark</p>
+
+                            <div class="card-footer">
+                                <button class="btn-primary empty">
+                                    <a href="https://github.com/ThiagoGalhardo/desafio-countdown"
+                                        target="_blank">Github</a>
+                                </button>
+                                <button class="btn-primary">
+                                    <a href="https://thiagogalhardo.github.io/desafio-countdown/" target="_blank">Live
+                                        Demo</a>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <img src="./assets/img/conversordemoeda.gif" alt="">
+                            <h3>Conversor de moedas</h3>
+                            <p>Site para verificação da conversão de moeda, consumindo api em tempo real e construído
+                                utilizando o framework bulma.</p>
+
+                            <div class="card-footer">
+                                <button class="btn-primary empty">
+                                    <a href="https://github.com/ThiagoGalhardo/conversor-de-moedas"
+                                        target="_blank">Github</a>
+                                </button>
+                                <button class="btn-primary">
+                                    <a href="https://conversor-de-moedas-six.vercel.app/" target="_blank">Live
+                                        Demo</a>
+                                </button>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="case">
-                        <img src="./assets/img/case2.jpg" alt="Case 2" />
-                    </div>
-                    <div class="case">
-                        <img src="./assets/img/case3.jpg" alt="Case 3" />
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+
+
+
+
+
+
+
             </div>
         </section>
 
@@ -204,6 +298,7 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
