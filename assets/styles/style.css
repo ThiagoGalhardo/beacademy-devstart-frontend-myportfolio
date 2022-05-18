@@ -18,6 +18,7 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
 }
 
 header .container .logo p{
@@ -59,10 +60,84 @@ header .container nav .menu-social img:hover {
     transform: translateY(-10%);
 }
 
+.toggle {
+    position: fixed;
+    top: 2.5rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background: var(--black-color-medium) url(../img/menu.png);
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 200;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+
+.toggle.active {
+    background: var(--black-color-medium) url(../img/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: 0.5s;
+    z-index: 150;
+    right: -100%;
+}
+
+.sidebar.active {
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+.sidebar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    font-size: 4rem;
+    margin: 1rem 0 5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem;    
+}
+
+.sidebar ul li a:hover {
+    color: var(--blue-dark);
+}
+
+
+
 /* SECTION HERO */
 
 .s-hero {
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .s-hero .container {
@@ -259,17 +334,17 @@ header .container nav .menu-social img:hover {
 }
 
 
-/* CASES */
+/* PROJECTS */
 
-.s-cases {
+.s-projects {
     min-height: 90vh;
 }
 
-.s-cases .container {
+.s-projects .container {
     display: flex;
     flex-direction: column;
 }
-.s-cases .container .title-cases {
+.s-projects .container .title-projects {
     margin-bottom: 7.3rem;
 }
 
@@ -395,5 +470,3 @@ footer .container .copy {
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
-
-

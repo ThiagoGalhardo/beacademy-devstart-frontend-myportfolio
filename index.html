@@ -39,11 +39,12 @@
             </div>
             <nav>
                 <ul class="menu">
-                    <li><a href="#about" class="menu-item">QUEM SOU</a></li>
-                    <li><a href="#cases" class="menu-item">CASES</a></li>
+                    <li><a href="#success" class="menu-item">SUCESSO</a></li>
+                    <li><a href="#about" class="menu-item">SOBRE MIM</a></li>
+                    <li><a href="#projects" class="menu-item">PROJETOS</a></li>
+                    <li><a href="#contact" class="menu-item">CONTATO</a></li>
                 </ul>
-                <a href="#contact" class="btn-primary">
-                    😉 <span>PEÇA UM ORÇAMENTO</span></a>
+
                 <ul class="menu-social">
                     <li class="icon-social">
                         <a href="https://www.linkedin.com/in/thgalhardo/" target="_blank"><img
@@ -56,11 +57,24 @@
                 </ul>
             </nav>
 
+
+            <div class="toggle" onclick="toggleMenu();"></div>
+
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#home" onclick="toggleMenu();">Início</a></li>
+                    <li><a href="#success" onclick="toggleMenu();">Sucesso</a></li>
+                    <li><a href="#about" onclick="toggleMenu();">Sobre mim</a></li>
+                    <li><a href="#projects" onclick="toggleMenu();">Projetos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contato</a></li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
     <main>
-        <section class="s-hero">
+        <section class="s-hero" id="home">
             <div class="container">
                 <div class="hello">
                     <div class="title">
@@ -82,7 +96,7 @@
                             </a>
                         </div>
 
-                        <a href="#cases" class="btn-primary empty">Veja meus cases</a>
+                        <a href="#projects" class="btn-primary empty">Veja meus projetos</a>
                     </div>
                 </div>
                 <div class="hello-image">
@@ -92,7 +106,7 @@
             </div>
         </section>
 
-        <section class="s-success">
+        <section class="s-success" id="success">
             <div class="container">
                 <div class="title-success">
                     <span class="tag">#QualidadeImpecável 🥇</span>
@@ -143,10 +157,10 @@
 
         </section>
 
-        <section id="about" class="s-about">
+        <section class="s-about" id="about">
             <div class="container">
                 <div class="about-me">
-                    <h2>QUEM SOU<span>.</span></h2>
+                    <h2>SOBRE MIM<span>.</span></h2>
                     <p>Moro no Brasil, tenho 30 anos e sou formado em Análise e Desenvolvimento de Sistemas.
                         Sou apaixonado por tecnologia e programação, estou sempre em busca de aprimorar meus
                         conhecimentos e utiliza-los para contribuir com esse mundo maravilhoso da tecnologia.
@@ -154,13 +168,13 @@
                     </p>
                     <ul>
                         <li class="icon-social">
-                            <a href="https://www.linkedin.com/in/thgalhardo/"><img src="./assets/img/icon-linkedin.svg"
-                                    alt="Meu Linkedin" /></a>
+                            <a href="https://www.linkedin.com/in/thgalhardo/" target="_blank"><img
+                                    src="./assets/img/icon-linkedin.svg" alt="Meu Linkedin" /></a>
                         </li>
 
                         <li class="icon-social">
-                            <a href="https://github.com/ThiagoGalhardo"><img src="./assets/img/icon-github.svg"
-                                    alt="Meu GitHub" /></a>
+                            <a href="https://github.com/ThiagoGalhardo" target="_blank"><img
+                                    src="./assets/img/icon-github.svg" alt="Meu GitHub" /></a>
                         </li>
                     </ul>
                 </div>
@@ -170,10 +184,10 @@
             </div>
         </section>
 
-        <section id="cases" class="s-cases">
+        <section class="s-projects" id="projects">
             <div class="container">
-                <div class="title-cases">
-                    <h2>CASES<span>.</span></h2>
+                <div class="title-projects">
+                    <h2>PROJETOS<span>.</span></h2>
                 </div>
 
                 <div class="swiper mySwiper">
