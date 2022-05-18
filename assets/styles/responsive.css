@@ -226,6 +226,16 @@
         color: var(--second-color)
     }
 
+    .s-success .container .cards .card .card-title h3 {
+        text-align: center;
+        padding: 0;
+        line-height: 7.7rem;
+        margin-left: 11rem;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+        align-self: center;
+    }
+
     .mySwiper{
         width: 250px;
     }
