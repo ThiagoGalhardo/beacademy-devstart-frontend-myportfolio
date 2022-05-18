@@ -34,6 +34,7 @@ Figma utilizado como base: [Figma](https://www.figma.com/file/cORQUmT2QxFhV1IFQR
 
 - Live Site URL: [Live Site](https://thiagogalhardo.github.io/beacademy-devstart-frontend-myportfolio/)
 - Scroll Reveal URL: [Scroll Reveal](https://scrollrevealjs.org/)
+- Swiper JS URL: [Swiper JS](https://swiperjs.com/)
 
 ### Tecnologias:
 
@@ -45,6 +46,7 @@ Figma utilizado como base: [Figma](https://www.figma.com/file/cORQUmT2QxFhV1IFQR
 
 - [x] Responsividade
 - [x] Animações
+- [x] Carrossel
 
 ### Pré Requisitos
 
