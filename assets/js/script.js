@@ -54,11 +54,11 @@ sr.reveal(`
 
 sr.reveal('.techs a', { delay: 600, origin: 'bottom', interval: 200, });
 
+
+
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    loop: true,
     effect: "coverflow",
+    loop: true,
     grabCursor: true,
     centeredSlides: true,
     pagination: {
@@ -70,4 +70,17 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+
+        0: {
+            slidesPerView: 1
+        },
+
+        1260: {
+            effect: "coverflow",
+            slidesPerView: 3,
+            spaceBetween: 10
+        }
+
+    }
 });
