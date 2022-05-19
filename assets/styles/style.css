@@ -9,8 +9,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 4rem 0px;
+    padding: 0.5rem 0px;
     z-index: 10;
+    background-color: var(--blue-dark);
 }
 
 header .container {
@@ -51,8 +52,12 @@ header .container nav .menu-social {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    margin-left: 4rem;
+    margin-left: 3rem;
     gap: 2em;
+}
+
+header .container nav .menu-social img {
+    filter: brightness(120%);
 }
 
 header .container nav .menu-social img:hover {
